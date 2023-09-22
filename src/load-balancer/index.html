@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>What is Load Balancer?</title>
+        <link rel="icon" href="../assets/img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,700;1,200&family=Jura:wght@300;400;700&display=swap" rel="stylesheet">       
+        <link rel="stylesheet" href="../assets/css/style.article.css">
+        <link rel="stylesheet" href="../assets/libs/glightbox/css/glightbox.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <a href="../index.html"><img src="../assets/img/logo.new.svg" alt="visual knowledge"/></a>
+                <ul>
+                    <li><a  href="../about/index.html">about</a></li>
+                    <li><a  href="https://github.com/thecodemonkey/visual-knowledge">GitHub</a></li>
+                </ul>
+                <div class="burger" onclick="toggleSidebar()">&#9776;</div>
+            </div>
+        </nav>
+        <header class="hdr">
+            <div class="container">
+                <div class="header-text">
+                    <h1>What exactly is a Load Balancer?</h1>
+                    <p>The success of a web application is shown by the fact that it is used by more and more users. However, this also leads to a steadily increasing load on the servers. To ensure that the application remains performant despite the growing user rush and at the same time to avoid failures, additional servers are needed. Here, a load balancer takes on the task of distributing the payload as efficiently as possible to the servers behind it.</p>
+                    <div class="btn arrow-down" onclick="scrollToStart()"></div>
+                </div>
+                <div class="header-image">
+                    <img src="lb-cover.gif" alt="load balancer"/>
+                </div>
+            </div>
+            <div class="bg-light-blue"></div>
+            <div class="bg-light-red"></div>                        
+        </header>
+        <section class="content">
+            <div class="container">
+
+
+
+<!-- CARDS SAMPLE
+
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="lb-cover.gif" />
+                        </div>
+                        <div class="card-content">
+                            <h3>What exactly is a Load Balancer?</h3>
+                            <span>01/09/2023 | 5 min read</span>
+                            <p>With the steadily increasing user numbers of an application, the server load also rises. How can a Load Balancer help solve this problem?</p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                                <span class="chip">healthcheck</span>
+                                <span class="chip">network</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="lb-cover.gif" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 6 min read</span>
+                            <p>                                
+                                Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, , but most occur in mountain ranges.
+                            </p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../assets/img/start/cover-image.png" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 1 min read</span>
+                            <p>                                
+                                And is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land.
+                            </p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">healthcheck</span>
+                                <span class="chip">network</span>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../assets/img/start/lb.gif" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 8 min read</span>
+                            <p>                                
+                                A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. A few mountains are isolated summits, but most occur in mountain ranges.
+                            </p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                                <span class="chip">network</span>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="lb-cover.gif" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 10 min read</span>
+                            <p>                                
+                                A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges.
+                            </p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                                <span class="chip">healthcheck</span>
+                                <span class="chip">network</span>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../assets/img/start/load-balancer-final.gif" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 15 min read</span>
+                            <p>                                
+                                A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges.
+                            </p>
+                            <a href="#readmore" >read more...</a>
+                            <div class="tags">
+                                <span class="chip">network</span>
+                            </div>                            
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../assets/img/start/cover-image.png" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022 | 7 min read</span>
+                            <p>                                
+                                A few mountains are isolated summits, but most occur in mountain ranges.
+                            </p>
+                            <a href="#readmore" >read more</a>
+                            <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+-->
+
+
+                <a id="start" style="margin-top: 150px;">&nbsp;</a>
+                <a id="what_is_the_challenge" class="anch"></a>
+                
+                <!-- <figure style="position: relative; display: flex; flex-direction: column; align-items: stretch; align-self: center; margin-top: 50px; margin-bottom: 100px;">
+                    <div style=" position: absolute; z-index: 1; box-shadow: inset 0 0 15px 30px #1E2830; width: 100%; height: 100%; border: 10px solid #1E2830;"></div>
+                    <video src="lb-basic2.mp4" autoplay loop muted title="cube of visual knowledge" style="max-width: 100vw; max-height: 100vh; width: 100%;"></video>
+                    <figcaption>The client sends a request to the server. Each request generates a certain load on the server.</figcaption>
+                </figure> -->
+
+
+                <figure>
+                    <img src="../assets/img/blank.png" data-src="lb-basic.gif" class="lazy" alt="basic client/server communication" lightbox />
+                    <!-- <a href="lb-basic-hd.gif" class="glightbox" data-width="80vw">
+                        <img src="lb-basic.gif" loading="lazy" alt="basic client/server communication"/>
+                    </a> -->
+                    <figcaption>The client sends a request to the server. Each request generates a certain load on the server.</figcaption>
+                </figure>
+
+                
+                <h2 class="primary">What is the challenge?</h2>
+                <div class="multi-p">                   
+                    <p>
+                        A typical web application requires at least one server and one client. The server handles the client's requests by loading or storing data. A client can be a web browser on a PC or an app on a smartphone. For example, when you visit a particular website in your browser, it sends a request to the server. The server loads the page and sends it back to the browser. Such requests put a load on the server and take up available hardware resources such as CPU, RAM, hard disk and network traffic.
+                    </p>
+                    <p>
+                        If only a few clients access the web application, the load on the server remains manageable. However, if more clients access the same application at the same time, the server can be heavily loaded. This can cause the application to become slow for all clients or even fail completely.
+                    </p>
+                </div>
+
+
+
+
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="lb-overload.gif" class="lazy" alt="servers are overloaded" lightbox />
+                    <!-- <a href="lb-overload.gif" class="glightbox" data-width="80vw">
+                        <img src="lb-overload.gif" loading="lazy" alt="servers are overloaded"/>
+                    </a> -->
+                    <figcaption>When many clients simultaneously send numerous requests to the server, it can generate a significant load on the server.</figcaption>
+                </figure>
+
+                <a id="a_load_balancer_solves_the_problem" class="anch"></a>
+                <h2 class="primary">A Load Balancer solves this problem</h2>
+                <p>To solve this problem, applications are often run on multiple servers at the same time, a practice known as clustering. A cluster can consist of two or more servers, also called nodes. Each of these nodes is an exact copy with the same capabilities as the others within the same cluster. To efficiently distribute client requests across multiple servers, a load balancer is used. The load balancer ensures that as many client requests as possible are distributed evenly across several servers.</p>
+
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="lb-solution.gif" class="lazy" alt="load balancer is the solution" lightbox />
+                    <!-- <a href="lb-solution.gif" class="glightbox" data-width="80vw">
+                        <img src="lb-solution.gif" loading="lazy" alt="load balancer is the solution"/>
+                    </a> -->
+                    <figcaption>Adding more servers can effectively handle many requests, but a load balancer is essential for efficiently distributing incoming traffic across multiple servers while preventing requests from reaching overloaded or failed ones.</figcaption>
+                </figure>
+
+                <p>&nbsp;</p>
+                <a id="load_balancing_algorithms" class="anch"></a>
+                <h2 class="primary">Load Balancing algorithms</h2>
+                <p>Depending on the type of application, the load distribution may vary. To adjust the distribution effectively, load balancers offer various algorithms.
+                    There are essentially two types of load balancing algorithms: Static and Dynamic.
+                    There are numerous different load balancing algorithms, of which the following are likely the most commonly used.
+                </p>                
+                <!-- <img src="lb-algorithms.gif" loading="lazy"/> -->
+                <p>&nbsp;</p>
+                <a id="static_algorithms" class="anch"></a>
+                <h3>static algorithms</h3>
+                <p>Static algorithms are relatively straightforward and do not require any knowledge about the state of the servers. Static load balancing algorithms are often used in environments where server load is relatively constant and does not change frequently.</p>
+                <div class="multi-p">                   
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="lb-round-robin.gif" class="lazy" alt="round-robin algorithm"/>
+                        <!-- <img src="lb-round-robin.gif" loading="lazy" alt="round-robin algorithm"/>  -->
+                        <b>Round-Robin</b>
+                        This is the simplest way to distribute the load. In the Round-Robin method, each client request is forwarded to the next server in line.
+                    </p>
+                    <p>
+                        <img class="lazy" src="../assets/img/blank.png" data-src="lb-round-robin.gif" alt="weighted round-robin algorithm"/>
+                        <!-- <img src="lb-weighted-round-robin.gif" loading="lazy" alt="weighted round-robin algorithm"/>  -->
+                        <b>Weighted Round-Robin</b>In Weighted Round-Robin Load Balancing, servers can be assigned different weights based on priority or capacity. Servers with higher weights receive more requests.
+                    </p>
+                    <p>
+                        <img class="lazy" src="../assets/img/blank.png"  data-src="lb-ip-hash.gif" alt="ip-hash algorithm"/> 
+                        <b>IP-Hash</b>With the IP-Hash method, each client is directly associated with a specific server. Consequently, all subsequent requests from a particular client are directed to the same server.
+                    </p>
+                </div>
+                <a id="dynamic_algorithms" class="anch"></a>
+                <h3>dynamic algorithms</h3>
+                <p>Dynamic algorithms are more intelligent as they analyze the server load and distribute requests based on these results. Dynamic load balancing algorithms are used in environments where the server load is unpredictable and continuously fluctuates.</p>
+                <div class="multi-p">
+                    <p>
+                        <img  class="lazy" src="../assets/img/blank.png"  data-src="lb-least-connection.gif" alt="least connection algorithm"/> 
+                        <b>Least Connection</b>With this approach, the load balancer monitors the number of active requests currently being processed on the servers. All new requests are sent to the server with the fewest open requests.
+                    </p>
+                    <p>
+                        <img  class="lazy" src="../assets/img/blank.png"  data-src="lb-least-response.gif" alt="least response algorithm"/> 
+                        <b>Least Response Time</b>In this method, response times from past requests are measured, allowing the server with the fastest processing time to receive the current request.
+                    </p>
+                    <p>
+                        <img  class="lazy" src="../assets/img/blank.png"  data-src="lb-resource-based.gif" alt="resource-based algorithm"/> 
+                        <b>Resource-Based</b>With the resource-based method, Load Balancers distribute traffic by proactively analyzing the current server load. The server with the lowest load receives each current request.
+                    </p>
+                </div>
+
+
+                <p>&nbsp;</p>
+                <a id="various_types_of_load_balancers" class="anch"></a>
+                <h2 class="primary">Various Types of Load Balancers</h2>
+                <p>There are various types of load balancers, including software, hardware, and cloud-based solutions. The choice between these load balancer types primarily depends on where you operate your infrastructure, whether it's in your own data center, in the cloud, or in a hybrid environment.</p>
+
+                <!-- <a href="lb-types.png" class="glightbox" data-width="80vw">
+                    <img src="lb-types.png" />
+                </a> -->
+                <div class="multi-p">                   
+                    <p>
+                        <a id="hardware_load_balancer" class="anch"></a>
+                        <img  class="lazy" src="../assets/img/blank.png"  data-src="lb-hardware.gif" alt="hardware load balancer"/>
+                        <b>Hardware Load Balancer</b>
+                        Hardware load balancers are optimised for use in data centres and offer robust performance. They are less prone to software errors and failures as they are specifically designed for their task. However, they are more expensive to purchase and require ongoing maintenance costs. Compared to software or cloud load balancers, they are less customisable and scalable.
+                    </p>
+                    <p>
+                        <a id="software_load_balancer" class="anch"></a>
+                        <img  class="lazy" src="../assets/img/blank.png"  data-src="lb-software.gif" alt="software load balancer"/>
+                        <b>Software Load Balancer</b>
+                        Software load balancers are flexible and cost-effective solutions. They run on existing infrastructure and are easily scalable. Their configuration and management usually require less technical expertise, making them a user-friendly option. However, they reach their limits with very high traffic and can affect performance. They are also somewhat dependent on the underlying hardware.
+                    </p>
+                </div>
+
+                <a id="cloud_load_balancer" class="anch"></a>
+                <h3>Cloud Load Balancer</h3>
+                <img class="lazy" src="../assets/img/blank.png"  data-src="lb-cloud.gif" style="max-width:600px" alt="load balancer as a cloud solution"/>
+                <p>
+                    Cloud load balancers offer two key advantages. First, they are typically managed by cloud providers, eliminating the need for installation and updating. Second, they allow for automatic scalability of performance, meaning they can handle extremely high levels of traffic as needed, without intervention from administrators.
+                </p>
+                <p>
+                    However, there is a potential drawback: costs can increase if they are not deployed wisely or with insufficient cost control, as they operate on a pay-as-you-go model.
+                </p>                    
+
+
+                <!-- <img src="../assets/img/blank.png"  data-src="../assets/img/cube-home2.gif" class="lazy"/> -->
+
+                <p>&nbsp;</p>
+                <a id="conclusion" class="anch"></a>
+                <h2 class="primary">Conclusion</h2>
+                <p>A structure consisting of a cluster with several servers and a load balancer that distributes the load efficiently guarantees maximum availability of the application. In addition, such a setup offers a way to minimise the operating costs of a web application while being prepared for future business growth.</p>
+                <div class="cube"></div>
+                <div class="btn top" onclick="scrollToTop()"></div>
+                <div class="bg-light-bottom"></div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="container">
+                <!--
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>                
+                </div>
+                -->
+            </div>                
+            <div class="credits">
+                <!-- <img src="../assets/img/logo.red.svg" height="24px" alt="visual knowledge logo"/> -->
+                <img src="../assets/img/cube.red.svg" height="24px"/>
+                <span>© 2023</span>
+                <span>Visual Knowledge</span>
+                <span>All rights reserved.</span>
+            </div>
+        </footer>
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#what_is_the_challenge" onclick="toggleSidebar()">What is the challenge?</a></li>
+                <li class="active"><a href="#a_load_balancer_solves_the_problem" onclick="toggleSidebar()">A Load Balancer solves this problem</a></li>
+                <li><a href="#load_balancing_algorithms" scroll-behavior="smooth" onclick="toggleSidebar()">Load Balancing algorithms</a>
+                    <ul>
+                        <li><a href="#static_algorithms" onclick="toggleSidebar()">static algorithms</a>
+                            <ul>
+                                <li><a href="#round_robin" onclick="toggleSidebar()">Round-Robin</a></li>
+                                <li><a href="#weighted_round_robin" onclick="toggleSidebar()">Weighted Round-Robin</a></li>
+                                <li><a href="#ip_hash" onclick="toggleSidebar()">IP-Hash</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#dynamic_algorithms" onclick="toggleSidebar()">dynamic algorithms</a>
+                            <ul>
+                                <li><a href="#least_connection" onclick="toggleSidebar()">Least Connection</a></li>
+                                <li><a href="#least_response_time" onclick="toggleSidebar()">Least Response Time</a></li>
+                                <li><a href="#resource_based" onclick="toggleSidebar()">Resource-Based</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>                        
+                <li><a href="#various_types_of_load_balancers" onclick="toggleSidebar()">Various Types of Load Balancers</a>
+                    <ul>
+                        <li><a href="#hardware_load_balancer" onclick="toggleSidebar()">Hardware Load Balancer</a></li>
+                        <li><a href="#software_load_balancer" onclick="toggleSidebar()">Software Load Balancer</a></li>
+                        <li><a href="#cloud_load_balancer" onclick="toggleSidebar()">Cloud Load Balancer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#conclusion" onclick="toggleSidebar()">Conclusion</a></li>
+            </ul>
+        </div>
+        <script src="../assets/libs/lazyload/lazyload.min.js"></script>
+        <script src="../assets/libs/glightbox/js/glightbox.min.js"></script>
+        <script src="../assets/js/script.article.js"></script>
+
+
+    </body>
+</html>
+
+
+<!--
+    <div class="multi-p left">
+        <p><b>Content with Image</b>High elevations on mountains produce colder climates than at sea level at similar latitude.These colder climates strongly affect the ecosystems of mountains: different elevations have different plants and animals. Because of the less hospitable terrain and climate, mountains tend to be used less for agriculture and more for resource extraction, such as mining and logging, along with recreation, such as mountain climbing and skiing.</p>
+        <div><img src="img/start/lb.gif" class="lightbox"/></div>
+    </div>
+
+    <div class="multi-p right">
+        <div><img src="img/start/lb.gif" class="lightbox"/></div>
+        <p><b>Content with Image</b>High elevations on mountains produce colder climates than at sea level at similar latitude.These colder climates strongly affect the ecosystems of mountains: different elevations have different plants and animals. Because of the less hospitable terrain and climate, mountains tend to be used less for agriculture and more for resource extraction, such as mining and logging, along with recreation, such as mountain climbing and skiing.</p>
+    </div>                 
+-->

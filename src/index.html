@@ -1,9 +1,165 @@
-<html>
-  <head>
-    <title>visual knowledge</title>
-  </head>   
-  <body>
-    <h1>Visual Knowledge</h1>
-    <p>coming <b>soon</b>...</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>What is Load Balancer?</title>
+        <link rel="icon" href="assets/img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,700;1,200&family=Jura:wght@300;400;700&display=swap" rel="stylesheet">       
+        <link rel="stylesheet" href="assets/css/style.article.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <a href="index.html"><img src="assets/img/logo.new.svg" alt="visual knowledge"/></a>
+                <ul>
+                    <li><a  href="about/index.html">about</a></li>
+                    <li><a  href="https://github.com/thecodemonkey/visual-knowledge">GitHub</a></li>
+                </ul>
+                <div class="burger" onclick="toggleSidebar()">&#9776;</div>
+            </div>
+        </nav>
+        <header class="hdr">
+            <div class="container">
+                <div class="header-text">
+                    <h1 class="home">Complex Knowledge <br/> simply <span>visualized</span></h1>
+                    <p>Understanding the digital world is a great challenge. It often seems complex and elusive to us. 
+                        This knowledge can be made more tangible by making the virtual and seemingly invisible things visible again.</p>
+                    <div class="btn arrow-down" onclick="scrollToStart()"></div>
+                </div>
+                <div class="header-image">                  
+                    <!-- <video src="assets/img/cube-home.mp4" autoplay loop muted title="cube of visual knowledge"></video> -->
+
+                    <img src="assets/img/cube-home.gif" alt="cube of visual knowledge"/>
+                </div>
+            </div>
+            <div class="bg-light-blue"></div>
+            <div class="bg-light-red"></div>                        
+        </header>
+        <section class="content">
+            <div class="container" style="padding-top: 150px;">
+
+                <a id="start" class="anch" style="top: -50px;">&nbsp;</a>
+                <h2 class="primary">Recent Articles</h2>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-img">
+                            <!-- <video src="assets/img/cube-light.mp4" autoplay loop muted title="cube of visual knowledge"></video> -->
+                            <img src="load-balancer/lb-cover-thumbnail.png" alt="load balancer"/>
+                        </div>
+                        <div class="card-content">
+                            <h3>What exactly is a Load Balancer?</h3>
+                            <span>01/09/2023</span>
+                            <p>With the steadily increasing user numbers of an application, the server load also rises. How can a Load Balancer help solve this problem?
+                                <a href="load-balancer/index.html" class="btn-right"></a>
+                            </p>
+                            <!-- <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                                <span class="chip">healthcheck</span>
+                                <span class="chip">network</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/img/lb-overload.png" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022</span>
+                            <p>                                
+                                Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, , but most occur in mountain ranges.
+                                <a href="#readmore" class="btn-right"></a>
+                            </p>
+                            <!-- <div class="tags">
+                                <span class="chip">failover</span>
+                                <span class="chip">cluster</span>
+                            </div>                             -->
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/img/start/cover-image.png" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Hallo whats thät?</h3>
+                            <span>01/02/2022</span>
+                            <p>                                
+                                And is usually higher than a hill, typically rising at least 300 metres (980 ft) above the surrounding land.
+                                <a href="#readmore" class="btn-right"></a>
+                            </p>
+
+                            <!-- <div class="tags">
+                                <span class="chip">healthcheck</span>
+                                <span class="chip">network</span>
+                            </div>                             -->
+                        </div>                        
+                    </div>
+                </div>
+               
+
+
+                <div class="cube"></div>
+                <div class="btn top" onclick="scrollToTop()"></div>
+                <div class="bg-light-bottom"></div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="container">
+                <!--
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB's</a></li>
+                        <li><a href="#">Diverses</a></li>
+                    </ul>                
+                </div>
+                -->
+            </div>                
+            <div class="credits">
+                <!-- <img src="assets/img/logo.red.new.svg" height="24px" alt="visual knowledge logo"/> -->
+                <img src="assets/img/cube.red.svg" height="25px"/>
+                <span>© 2023</span>
+                <span>Visual Knowledge</span>
+                <span>All rights reserved.</span>
+            </div>
+        </footer>
+        
+        <div class="sidebar">
+            <ul class="mobile-only">
+                <li><a href="about/index.html">About Visual Knowledge</a></li>
+                <li><a href="https://github.com/thecodemonkey/visual-knowledge" onclick="toggleSidebar()">GitHub</a></li>
+            </ul>
+        </div>
+        <script src="assets/libs/lazyload/lazyload.min.js"></script>
+        <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/js/script.article.js"></script>
+
+    </body>
 </html>
+
