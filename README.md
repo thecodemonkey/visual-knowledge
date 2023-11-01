@@ -1,6 +1,13 @@
+[![publish](https://github.com/thecodemonkey/visual-knowledge/actions/workflows/publish.yml/badge.svg)](https://github.com/thecodemonkey/visual-knowledge/actions/workflows/publish.yml)
+ 
+
+<br/>
 <center>
   <img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/4e0e1756-fafb-490f-885b-02882a6c947f"/>
 </center>
+<br/><br/>
+https://www.visualknowledge.io
+
 
 
 <br/><br/><br/>
