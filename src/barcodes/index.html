@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>The fabulous world of barcodes</title>
+        <link rel="icon" href="../assets/img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,700;1,200&family=Jura:wght@300;400;700&display=swap" rel="stylesheet">       
+        <link rel="stylesheet" href="../assets/css/style.article.css">
+        <link rel="stylesheet" href="../assets/libs/glightbox/css/glightbox.min.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <a href="/"><img src="../assets/img/logo.new.svg" alt="visual knowledge"/></a>
+                <ul>
+                    <li><a  href="../about">about</a></li>
+                    <li><a  href="https://github.com/thecodemonkey/visual-knowledge">GitHub</a></li>
+                </ul>
+                <div class="burger" onclick="toggleSidebar()">&#9776;</div>
+            </div>
+        </nav>
+        <header class="hdr">
+            <div class="container">
+                <div class="header-text">
+                    <h1>The fabulous world of barcodes</h1>
+                    <p>They may seem to come from another galaxy - enchanting and almost magical. However, they are of earthly origin. They serve as a bridge between the hidden digital and the visible analog world, allowing for the lightning-fast transmission of information between these two realms. In this regard, they are true wizards!</p>
+                    <a href="#what_problem" class="btn arrow-down"></a>
+                </div>
+                <div class="header-image">
+                    <img src="bc.cover.gif" alt="load balancer"/>
+                </div>
+            </div>
+            <div class="bg-light-blue"></div>
+            <div class="bg-light-red"></div>                        
+        </header>
+        <section class="content">
+            <div class="container">
+                <a id="what_problem" class="anch" style="margin-top: 150px; top:-50px"></a>
+                <h2 class="primary">What problem do barcodes solve?</h2>
+                <p>
+                    Imagine standing in line at the supermarket checkout. There are approximately 20 people ahead of you with full shopping carts, each containing an average of 30 items. 
+                    This means that approximately <b>20 x 30 = 600</b> items need to be scanned and processed before it's your turn.
+                    For each item, the product number must be entered into the cash register system. For instance, a European Article Number (EAN) consists of 13 digits. 
+                    Normally, these 13 digits would have to be manually typed in for each individual item. 
+                    Assuming this process takes about 10 seconds per item, including possible errors and corrections, it would mean that you would need approximately 
+                    6,000 seconds for 600 items, which equates to 100 minutes or <b>1.6 hours</b>. 
+                    That's how long you would have to wait in line.
+                </p>  
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-process.gif" class="lazy" alt="scanning barcode vs. manual typing" lightbox />
+                    <figcaption>Manual data capture is extremely slow and error-prone. Thanks to barcodes, data can be captured much faster.</figcaption>
+                </figure>     
+                <div class="multi-p">            
+                    <p>
+                        Scanning a barcode reduces the entry of a single item number to less than 1 second. This means that 600 items can be processed in just 10 minutes instead of 1.6 hours. Hooray, thanks to barcodes, we only have to wait in line for <strong>10 minutes</strong>!
+                    </p>    
+                    <p>
+                        This fundamental principle of automated data capture is not only applied at supermarket checkouts but also in manufacturing facilities, the logistics sector, the pharmaceutical industry, public transportation, and many other aspects of our daily lives.
+                    </p>
+                </div>   
+
+                <a id="camera_ocr_alternative" class="anch"></a>
+                <h3>Capturing plain text via camera?</h2>
+                <p>Certainly, it is possible to take a photo of the article number or relevant text and transfer the data to the computer, subsequently extracting the information from an image using optical character recognition (OCR). However, this approach has several disadvantages compared to scanning barcodes in practice.</p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="ocr-scan.png" class="lazy" alt="optical character recognition vs. barcodes" lightbox />
+                    <figcaption>Scanning barcodes is unequivocal and unambiguous, whereas optical character recognition (OCR) can yield incomplete and ambiguous results.</figcaption>
+                </figure>
+                <h3>Accuracy of Captured Data</h3>
+                <p>
+                    With this method, there is no certainty regarding the accuracy of the captured data. Often, this method leads to data being misinterpreted or transmitted incompletely at the destination. The verification of data capture accuracy can ultimately only be done by a human. Scanning the barcode, on the other hand, provides a clear result. Either the capture was successful or it wasn't. If it was successful, the captured data is correct. There is no gray area. This definitiveness is crucial for automated data processing
+                </p>
+                <div class="multi-p">
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="barcode-damage.gif" class="lazy" alt="barcode damage" />
+                        <b>Error Correction</b>
+                        Especially 2D codes have automatic error correction mechanisms. These mechanisms enable correct data capture even if a barcode is partially damaged. In contrast, with a printed article number, for example, if the last two digits are missing due to damage, the number will also be captured incompletely in the computer.
+                    </p>
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="barcode-ean-vs-datamatrix.png" class="lazy" alt="barcode damage" />
+                        <b>Physical Space and Data Density</b>
+                        For example, a DataMatrix code can be printed on extremely small surfaces and can be captured with great precision and speed. In contrast, numbers or longer texts become unreliable as they get smaller. They require a larger physical area, which may not be available on small electronic components, for instance.
+                    </p>
+                </div>
+
+
+                <a id="evolution_of_barcodes" class="anch"></a>
+                <h2 class="primary">Evolution of barcodes</h2>
+                <p>
+                    Experiments with barcodes began as early as the 1940s. Since then, these codes have undergone an impressive development and are now available in many forms and for different purposes. Basically, barcode technology can be divided into two broad categories: 1D barcodes and 2D matrix barcodes. Based on 2D code technology, an additional class of 3D barcodes has evolved, essentially providing expanded data density and thus increased overall capacity.
+                </p>
+                <p>
+                    In the development of barcodes, the main objective has always been to store as much data as possible in a limited physical area. Another crucial aspect was the integration of extremely efficient automatic error correction mechanisms, as barcodes are prone to damage in the physical world.                    
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-evolution.png" class="lazy" alt="evolution of barcodes" lightbox />
+                    <figcaption>The properties of barcodes have steadily improved over time. ECL = error correction level in %. Capacity = hight of capacity and data density. size = flexibility in the physical size.</figcaption>
+                </figure>
+
+
+                <a id="1d_barcodes" class="anch"></a>
+                <h2 class="primary">1D barcodes</h2>
+                <p>
+                    1D barcodes, also known as linear codes, represent the first generation of barcodes. They became established in the 1970s, especially in supermarkets, and have retained their place ever since. These barcodes consist of horizontally arranged bars and spaces of varying thickness. They are designed for horizontal reading and therefore have a limited capacity, which means that they can usually only hold a few alphanumeric characters.
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-scanning.gif" class="lazy" alt="scanning of a barcode" lightbox />
+                    <figcaption>An article number is scanned and transferred to the computer. This article number is used to determine further article information in the system. </figcaption>
+                </figure>
+                <div class="multi-p">
+                    <p>
+                        1D barcodes are typically read using a special scanner that requires precise horizontal scanning. The scanner acts like a keyboard and transmits the data to the computer through a single scan. Due to their limited capacity, these barcodes usually only have article numbers, while other relevant information, such as product name, manufacturer and price, is stored on the computer or server.
+                    </p>         
+                    <p>
+                        Understandable numbers that are human readable usually appear above or below a barcode symbol. These numbers correspond to the digits encoded in the barcode and allow people to identify the code without scanning it. They act as a sort of backup in case barcodes are damaged or distorted and therefore can no longer be recognized by a barcode reader.                    
+                    </p> 
+                </div>      
+                <p>&nbsp;</p>
+                <a id="anatomy_1d" class="anch"></a>
+                <h3>Anatomy of 1D barcodes</h3>
+                <p>
+                    Barcodes represent information by a sequence of bars and spaces. The information encoded in this way can be numbers, letters or special characters. The characters are assigned to a pattern of bars and spaces according to a predefined encoding procedure. This procedure determines how the characters are converted into a binary representation, where dashes are often represented as binary ones and free spaces as binary zeros. 
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-decode.gif" class="lazy" alt="structure of barcodes" lightbox />
+                    <figcaption>A typical structure of an EAN8 barcode. In the example, the first number of an EAN-8 barcode is decoded. The remaining numbers of the barcode are read according to the same principle. This approach is valid for almost all 1D barcodes.</figcaption>
+                </figure>
+                <p>
+                    To indicate the beginning and end of the barcode, start and stop characters are added. These are important so that the barcode reader knows where the barcode begins and ends. The width and order of the bars and spaces are also standardized and are determined according to the barcode specifications. In some barcode types, a checksum is calculated and added to detect errors during reading.                     
+                </p>     
+                <p>&nbsp;</p>
+                <a id="decoding_1d" class="anch"></a>
+                <h3>Decoding the barcode</h3>                
+                <div class="multi-p">
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="barcode-segment.png" class="lazy" alt="segmentation of barcodes" />
+                        The barcode is divided into various logical segments. Some of them are visible, while others are not, at least not at first glance. The spaces between the bars are, in fact, also bars that are simply white.
+                        <br/><br/>
+                        The entire EAN-8 barcode is divided into 67 equally wide segments, each of which has a value of either 0 or 1. The visible bars can occupy 1 to a maximum of 4 of these segments in width, explaining the distinction between narrow and wide bars. A black bar corresponds to a 1, while a white space corresponds to a 0.                        
+                    </p>
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="barcode-guards.png" class="lazy" alt="guards of barcodes" />
+                        <b>1. Guards</b>
+                        The long bars in the barcode are referred to as guards and belong to the category of metadata. These guards aid in decoding to recognize where the data sequences begin and precisely end. Therefore, the long bars on the left are called Start Guard, and those on the right are known as Stop Guard. Each of them is 3 bars wide, consisting of 2 black bars with a white bar in between. In the middle, there is also the Center Guard, which divides the barcode into the left and right data sequences.                        
+                    </p>                    
+                </div>
+                <div class="multi-p">
+                    <p>
+                        <b>2. Data/Content</b>
+                        <img src="../assets/img/blank.png"  data-src="barcode-data.png" class="lazy" alt="data blocks of barcodes" />
+                        The data or the actual content of the barcode is represented in the form of slightly shorter bars between the guards and is divided into 2 parts: the left and the right data field. On the left side, exactly 4 numbers are encoded. The same applies to the right side.
+                        <br/><br/>
+                        <img src="../assets/img/blank.png"  data-src="barcode-digit.png" class="lazy" alt="a single digit of barcodes" />
+                        A single digit is precisely encoded by 7 segments. Where a bar is black, the corresponding segment receives the value 1, while it remains white when it should be 0. Thus, for each encoded decimal digit, a sequence of exactly 7 ones and zeros is determined. Reading proceeds from left to right. Since there are 8 decimal digits encoded in an EAN-8 code, a total of exactly 8 x 7 blocks of 1s and 0s are determined, with 4 on the left and 4 on the right side.
+                    </p>
+                    <p>
+                        <b>3. Translation table</b>
+                        <img src="../assets/img/blank.png"  data-src="barcode-translation-table.png" class="lazy" alt="translation table of barcodes" />
+                        A single code block, consisting of 7 ones and zeros, corresponds to a specific decimal number. This mapping is defined in a fixed logical translation table. After reading all 8 code blocks, they can now be definitively converted into decimal numbers thanks to the translation table.
+                        <br/><br/>
+                        In fact, there are 2 different translation tables, one for the 4 code blocks on the left and a separate one for the 4 code blocks on the right side of the barcode.                        
+                    </p>
+                </div>
+                <h3>4. checksum calculation</h3>
+                <p>
+                    The barcode contains a mechanism that can automatically verify whether the code has been read correctly. This ensures that in cases of damage or poor lighting conditions, a barcode is either read correctly or not at all. For this purpose, the last digit in the right block exists, known as the check digit.
+                    
+                    <img src="../assets/img/blank.png"  data-src="modulo-10-algorithm.png" class="lazy" alt="modulo-10 algorithm" />
+
+                    To perform this verification, at the end of the reading process, all determined numbers are passed through a special algorithm called the "Modulo-10 algorithm." The result at the end of the calculation must precisely match the check digit.
+                    <br/><br/>                    
+                    You can see how the calculation of the check digit works in detail here:
+                    <a href="https://barcode-coder.com/en/ean-8-specification-101.html" target="_blank">Checksum Calculation</a>
+                </p>
+                <p>&nbsp;</p>
+                <a id="disadvantage_1d" class="anch"></a>               
+                <h3>Disadvantages of 1D barcode</h3>
+                <img src="../assets/img/blank.png"  data-src="barcode-disadvantages.png" class="lazy" alt="disadvantages of 1D barcode" />
+                <p>
+                    In addition to limited data density and capacity, a major disadvantage of 1D barcodes is the lack of error correction. Even if a part of the code is slightly damaged, it can no longer be reliably detected. In addition, scanning a 1D barcode requires extreme precision and adherence to a specific angle. Faced with these challenges, the development of a second generation of barcodes known as 2D matrix codes has been advanced.                    
+                </p>
+
+
+                <p>&nbsp;</p>
+                <a id="2d_barcodes" class="anch"></a>
+                <h2 class="primary">2D barcodes</h2>
+                <p>
+                    The 2D matrix code represents a logical evolution of the 1D barcode, introducing several additional features. The primary advantage of 2D codes lies in their ability to arrange information within a square area instead of a horizontal linear format. Instead of long bars, they use small squares, also known as modules. By utilizing multiple rows and columns within this space, hence the term "2D," a significantly larger amount of information can be accommodated on the same surface.
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="qr-code-usecases.gif" class="lazy" alt="2D code " lightbox />
+                    <figcaption>With the QR code, you can not only access a website but also, for example, log in to a Wi-Fi network, share contact details, book an appointment and much more.</figcaption>
+                </figure>
+                <p>
+                    The widespread adoption of smartphones has resulted in nearly every ordinary individual carrying an unintentional 2D barcode scanner in their pocket. This has automatically given rise to entirely new use cases. It's not only about optimizing automated processes on the production line but also about providing users with a quick way to access digital information using their smartphones without straining their fingers on the smartphone keyboard.
+                    This process is also called mobile tagging.
+                </p>
+
+                
+                <p>&nbsp;</p>
+                <a id="capacity_density" class="anch"></a>
+                <h3>Data capacity and data density</h3>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-density.png" class="lazy" alt="capacity and density" lightbox />
+                    <figcaption>One can accommodate this amount of text in various barcode types.</figcaption>
+                </figure>
+                <p>
+                   2D codes allow the encoding and transmission of a much larger amount of information compared to traditional barcodes. Instead of just an item number, for instance, all data about a product can be stored in such a code. This opens up entirely new applications where external data sources or even internet connections can be dispensed with. For example, complete contact information for a person or a company can be integrated into such a code and transmitted through a single scanning process. This was not possible with a conventional 1D barcode due to its limited capacity. A QR code, for instance, can encode up to 3,800 characters.
+                </p>
+
+                <p>&nbsp;</p>
+                <a id="scanning_faster" class="anch"></a>
+                <h3>Scanning faster and easier</h3>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-angle.gif" class="lazy" alt="Scanning different codes from various angles." lightbox />
+                    <figcaption>Scanning different codes from various angles</figcaption>
+                </figure>
+                <p>
+                    Another advantage is the ability to capture codes from various angles. This significantly simplifies the capture process, reduces susceptibility to errors, and, most importantly, speeds it up. With 1D barcodes, which require a horizontal scanning beam, precision is crucial as all bars must be captured. For instance, scanning at a 90-degree angle is not possible. In contrast, 2D barcodes can be scanned from different directions, including top, bottom, and diagonally.
+                </p>
+
+                <p>&nbsp;</p>
+                <a id="reed_solomon" class="anch"></a>
+                <h3>Reed-Solomon error correction</h3>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="barcode-error-correction.gif" class="lazy" alt="damaged code" lightbox />
+                    <figcaption>Thanks to Reed-Solomon error correction codes, it can be read completely without any issues even in the presence of damage.</figcaption>
+                </figure>
+                <p>Another significant enhancement is the integration of error correction. This allows a barcode to remain readable even in the presence of damage. The Reed-Solomon error correction employs mathematical algorithms to detect and rectify errors in the data. It adds additional redundant information to the data, aiding in decryption when parts of the data are damaged.</p>
+                <div class="multi-p">
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="qr-code-logo.png" class="lazy" alt="logos in QR-Codes"/>
+                        Creative minds have recognized the potential of integrated error correction in QR codes and have started incorporating logos and other design elements into QR codes. Although a logo may obscure parts of the data, the code can still be read effortlessly.
+                    </p>
+                    <p>
+                        <img src="../assets/img/blank.png"  data-src="fqr-code-logo.png" class="lazy" alt="FQR-Codes"/>
+                        The drawback, however, is that the presence of a logo diminishes a portion of the code's invulnerability, despite having error correction in place. Consequently, a new type of code, known as FQR codes, has been developed. These codes offer graphical design flexibility from the outset while maintaining full error correction capabilities.
+                    </p>
+                </div>
+
+
+                <p>&nbsp;</p>
+                <a id="structure_of_2d" class="anch"></a>
+                <h3>The structure of a 2D barcode</h3>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="qr-code-structure.gif" class="lazy" alt="QR-Code code structure" lightbox />
+                    <figcaption>The structure of a QR code consists of various control modules and data.</figcaption>
+                </figure>                
+                <p>
+                    The structure of 2D codes varies because they represent an entire generation of different code types. Each type has its own characteristic structure. One of the most well-known types is probably the QR code. Therefore, let's take a closer look at how a QR code is structured.
+                </p>
+                <div class="multi-p">
+                    <p>
+                        <b>1. Module</b>
+                        <img src="../assets/img/blank.png"  data-src="qr-code-module.png" class="lazy" alt="QR-Code Module" />
+                        A QR code is composed of so-called modules, where each module is the smallest unit and can be either light or dark, with black and white being commonly used for best contrast. The total number of modules in the QR code varies depending on the content being encoded, with the smallest size being 21 x 21 = 441 modules and the maximum size being 177 x 177 = 31,329 modules.
+                        Some of these modules are used for specified controls and metadata, some for the actual content, and some for automatic error correction. Together, these modules create the characteristic QR code pattern.</p>
+                    <p>
+                        <b>2. Positioning Markers(Finder) + Alignment</b>
+                        <img src="../assets/img/blank.png"  data-src="qr-code-finder.gif" class="lazy" alt="QR-Code finder" />
+                        The large, easily visible squares in a QR code serve as positioning markers(Finder) and are a typical identifying feature. They indicate the top and bottom orientation of the QR code, ensuring smooth scanning from various angles. The alignment marker is a smaller square with a central black dot, designed to correctly align QR codes on curved surfaces. The number of alignment patterns in a QR code varies depending on the amount of information it contains, with larger amounts of information potentially requiring more alignment points.
+                    </p>
+                </div>
+                <div class="multi-p">
+                    <p>
+                        <b>3. Timing pattern</b>
+                        <img src="../assets/img/blank.png"  data-src="qr-code-timing.png" class="lazy" alt="QR-Code timing pattern" />
+                        The timing pattern consists of alternating light and dark modules arranged both vertically and horizontally between two positioning markers. These patterns are used to determine the size of the data field and helps to correctly determine the size of the decoding mask later when decoding the code. 
+                    </p>
+                    <p>
+                        <b>4. Format pattern</b>
+                        <img src="../assets/img/blank.png"  data-src="qr-code-format.png" class="lazy" alt="QR-Code format pattern" />
+                        The format patterns are positioned next to the positioning markers and contain information about the applied error correction as well as the selection of the appropriate mask pattern needed for data decoding.
+                    </p>                    
+                </div>
+                <p>&nbsp;</p>
+                <h3>5. Data/Content</h3>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="qr-decode-data.png" class="lazy" alt="QR-Code data decoded" lightbox />
+                    <figcaption>Decoding the data within a QR code.</figcaption>
+                </figure>                
+                <p>
+                    The main part of the QR code contains the data and the corresponding error correction. The information is encoded in binary in 8-bit blocks, where 8 bits or 1 byte correspond to one character. A single bit corresponds exactly to one module, which can be either dark or light, representing 1 or 0, respectively.
+                    Reading is done from the bottom right in a zigzag pattern, briefly upwards, and then to the left.                    
+                </p>
+                <p>&nbsp;</p>
+                <h3>6. Error correction level(ECL)</h3>
+                <p>
+                    QR-Codes are equipped with error correction features that enable data recovery even in the presence of significant contamination or damage to the code. Error correction (ECL/error level correction) is divided into 4 levels, namely L, M, Q, and H. These levels determine the percentage of damage the code can tolerate without becoming unreadable. Increasing the error correction level enhances error correction capability but also results in a larger QR code size. When selecting the error correction level, factors such as QR code size and usage should be taken into account. In most cases, error correction level M is more than sufficient.                    
+                </p>                
+
+
+                <p>&nbsp;</p>
+                <a id="static_vs_dynamic" class="anch"></a>
+                <h2 class="primary">Static vs. Dynamic QR Codes</h2>
+                <p>
+                    A dynamic QR code is not actually a distinct type of QR code or a unique feature; rather, it's a specific way of using the QR code.
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="qr-dynamic-vs-static.gif" class="lazy" alt="static vs. dynamic qr-code" lightbox />
+                    <figcaption>The functionality of a static QR code differs from that of a dynamic QR code.</figcaption>
+                </figure>
+                <div class="multi-p">
+                    <p>Static QR Codes contain information that rarely changes, such as contact details, URLs, or product information. Their content remains constant, regardless of when or where they are scanned.</p>
+                    <p>Dynamic QR Codes, on the other hand, include variable information, making them ideal for changing data like promotions or ticket details. They allow updates without the need for a new QR code, allowing the same physical representation to be used for different information.</p>
+                </div>
+
+
+                <p>&nbsp;</p>
+                <a id="3d_barcodes" class="anch"></a>
+                <h2 class="primary">3D barcodes</h2>
+                <p>
+                    2D codes have revolutionized data encoding by allowing storage of not only numbers but also entire texts and images. The integration of colors introduces a third dimension to these codes, increasing overall capacity and enabling more data to be stored in a limited space compared to black-and-white barcodes. The Reed-Solomon error correction in 3D codes permits smaller printing sizes with the same capacity, though it requires additional effort in manufacturing and scanning, along with reduced resistance to aging.
+                </p>
+                <figure>
+                    <img src="../assets/img/blank.png"  data-src="bc.jab.code.png" class="lazy" alt="article in jab code" lightbox />
+                    <figcaption>Here is the current article you are reading, encoded in a JAB code, containing approximately 20,000 characters.
+                        <a href="https://jabcode.org/scan" target="_blank">Would you like to read this code?</a>
+                    </figcaption>
+                </figure>
+                <p>
+                    Despite the significant advantages that 3D codes offer, they are currently less widespread and familiar compared to, for instance, QR codes. The technology still needs to reach a certain level of maturity before it becomes widely adopted.                    
+                </p>                
+                
+                <a id="comparative_analysis" class="anch"></a>
+                <h2 class="primary">Different codes in comparison</h2>
+                <p>There are hundreds of barcode types, including constantly evolving ones and less common variants for specific purposes and regions. Here is just a small selection of them.</p>
+
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/1d-ean-13.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>EAN-13 Barcode</b>(1D)<br/>
+                                <span class="small"><i>European Article Number 13 digits</i></span>
+                                <div>13 <i  class="small">digits</i></div>
+                                <div>no <i class="small">error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            The EAN code, primarily used in European supermarkets, encodes product information with 13 digits, while a shorter version, the EAN-8 code with 8 digits, is employed for smaller products.                            
+                        </div>                    
+                    </div>
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/1d-rm4scc.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>RM4SCC</b>(1D)<br/>
+                                <span class="small"><i>Royal Mail 4 State Customer Code</i></span>
+                                <div>variable <i  class="small">chars</i></div>
+                                <div>no <i class="small">error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            The RM4SCC code, initially developed by the Royal Mail in the UK, is now used in various countries, including Switzerland, Austria, Denmark, and Australia. These countries may have different character interpretations and variations in the code structure. The Universal Postal Union (UPU) has issued relevant guidelines and specifications.
+                        </div>                    
+                    </div>                    
+
+                    
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/2d-qr.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>QR-Code</b>(2D)<br/>
+                                <span class="small"><i>Quick Response Code</i></span>
+                                <div>4.296 <i  class="small">chars</i></div>
+                                <div>30% <i class="small">max error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            QR codes are widely used for various purposes, including scanning URLs, enabling Wi-Fi authentication, supporting marketing campaigns, and are especially prevalent among consumers for their convenience and versatility.
+                        </div>                    
+                    </div>
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/2d-aztec.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>Aztec-Code</b>(2D)<br/>
+                                <div>3067<i  class="small">chars</i></div>
+                                <div>99% <i class="small">max error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            It is used by Deutsche Bahn AG and SBB for their online tickets and mobile tickets (MMS). Additionally, the U.S. government employs this code to store biometric data during entry and exit procedures through the US-VISIT program.
+                        </div>                    
+                    </div>
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/2d-codablock.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>Codablock-F</b>(2D)<br/>
+                                <div>2725 <i  class="small">chars</i></div>
+                                <div> <i class="small"></i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            Codablock is a two-dimensional barcode developed in Germany in 1989, primarily used in the healthcare sector. It facilitates efficient product labeling, provides enhanced data security, and offers flexibility in adapting information within limited space.
+                        </div>                    
+                    </div>                    
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/3d-jab.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>JAB-Code</b>(3D)<br/>
+                                <div>&gt; 350,000<i  class="small">chars</i></div>
+                                <div>&gt; 30% <i class="small">error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            The JAB code offers higher data density and increased document security for record-based documents such as birth certificates. It can be easily verified using smartphones and is not limited to rectangular shapes.
+                            <a href="https://jabcode.org" target="_blank">https://jabcode.org</a>
+                        </div>                    
+                    </div>
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/3d-hccb.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>HCCB</b>(3D)<br/>
+                                <span class="small"><i>High Capacity Color Barcode</i></span>
+                                <div>&gt; 3,500<i  class="small">chars</i></div>
+                                <div>&gt; 30% <i class="small">error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            The High Capacity Color Barcode (HCCB), developed by Microsoft, is a colored 2D code that offers significantly higher information density than black and white 2D codes. It is considered a 3D code due to its use of color information. With various colors, it achieves twice the information density, totaling 3,500 characters per square inch, by using small triangles in four or eight colors, as well as white and black when necessary.
+                            <a href="https://en.wikipedia.org/wiki/High_Capacity_Color_Barcode" target="_blank">wikipedia</a>
+                        </div>                    
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="cell">
+                            <div>
+                                <img src="codes/3d-ulatracode.png" class="thumb"/>
+                            </div>
+                            <div class="info">
+                                <b>Ultracode</b>(3D)<br/>
+                                <div>&gt; 3x <i  class="small"> more than qr</i></div>
+                                <div>&gt; 30% <i class="small">error correct</i></div>
+                            </div>
+                        </div>                    
+                        <div>
+                            <p>Ultracodes are high-density color 2D codes specially optimized for URLs. They can encode various characters and offer a significantly higher data density compared to black and white codes.</p>
+                        </div>                    
+                    </div>
+                    
+                    
+
+                </div>
+
+
+                <p>&nbsp;</p>
+
+                <a id="barcode_alternatives" class="anch"></a>
+                <h2 class="primary">Barcode alternatives</h2>
+                <p>While barcodes are successfully used in many applications, there are also alternative technologies that offer certain advantages. </p>
+                <div class="multi-p">
+                    <p>
+                        <b>RFID (Radio-Frequency Identification)</b>
+                        RFID is a wireless technology that allows information to be exchanged wirelessly between an RFID tag and a reader. Unlike barcodes, RFID tags do not need to be visible and can come in a variety of shapes and sizes. They offer greater data storage capacity and allow multiple tags to be captured simultaneously, which is particularly useful in logistics and inventory management.</p>
+                    <p>
+                        <b>NFC (Near Field Communication)</b>
+                        NFC is another wireless technology used for short distances, typically within a few centimeters. It is commonly used in mobile payment systems and contactless access cards. NFC devices can exchange information simply by bringing them closer, which is useful for electronic tickets or sharing contact information, for example.</p>
+                    <p>
+                        <b>Ultrasonic Barcodes</b>
+                        Ultrasonic barcodes are an emerging technology that uses ultrasonic signals to transmit information. They are particularly useful in environments where other wireless technologies may be problematic due to interference or range limitations. Ultrasonic barcodes can be used in large warehouses or manufacturing facilities, for example, to accurately track the location of items.
+                        <br/>
+                        <a href="https://www.ifam.fraunhofer.de/de/Presse/Archiv/2020/bauteilkennzeichnung-gussbauteile-qr-codes.html" target="_blank">Fraunhofer ulatrasonic qr-codes(de)</a>
+                    </p>
+                </div>
+                <p>These alternative technologies offer flexibility and additional functionality beyond the capabilities of barcodes. Choosing the right technology depends on specific requirements and applications, with each technology having its own strengths and weaknesses. RFID and NFC have been particularly successful in logistics and retail, while ultrasonic barcodes are gaining traction in specialized environments.</p>
+                
+                <p>&nbsp;</p>
+                <a id="create_barcode" class="anch"></a>
+                <h2 class="primary">Create barcodes yourself</h2>
+                <p>
+                    Creating a barcode or QR code yourself is easy and convenient nowadays. You can use online portals or specialized apps for this purpose. Simply input the desired information, such as text, URL, or product details, choose the appropriate code type, and generate the code on the website or within the app. Afterward, you can download the generated code, save it on your computer, and either print it out or use it digitally. Don't forget to test the code before using it to ensure it accurately represents the desired information. Additionally, keep in mind that specific barcode standards may apply to commercial products.
+                    
+                    <br/><br/>
+                    Here is a good option to automatically generate both 1D and 2D codes. <br/>
+                    <a href="https://www.barcode-generator.org/" target="_blank">https://www.barcode-generator.org/</a>
+                </p>
+
+                <p>&nbsp;</p>
+
+                <a id="scan_barcode" class="anch"></a>
+                <h2 class="primary">Scanning codes</h2>
+                <p>
+                    Scanning codes with a smartphone is particularly effective for reading QR codes, as they often contain standardized information such as URLs, contact details, or Wi-Fi access data. Scanning barcodes also works quite well, especially when dealing with codes like EAN or ISBN barcodes. Overall, smartphones provide a convenient means for scanning various types of codes, with QR codes being especially efficient to capture due to their widespread standards.                    
+                    <br/><br/>
+                    Here is an app that supports various code types: 
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.teacapps.barcodescanner" target="_blank">android - QR & Barcode Scanner</a></li>
+                        <li><a href="https://apps.apple.com/de/app/qr-code-scanner-qrscan/id1226650677"  target="_blank">iphone - QR & Barcode Scanner</a></li>
+                    </ul>                    
+                </p>
+
+                <a id="conclusion" class="anch"></a>
+                <h2 class="primary">Conclusion</h2>
+                <div class="multi-p">
+                    <p>
+                        One fascinating feature of barcodes is that once they are created and printed, they do not require any energy or electronics to store the data they contain and make it accessible for the future. They can be transferred to paper, stone, metal or even skin. They are digital and analog at the same time. The binary information contained in the barcode is visible and can be transformed into true artwork by creative minds.
+                    </p>
+                    <p>
+                        Barcodes have permanently changed data capture and the automation of processes. Thanks to smartphones, barcodes not only optimize complex processes in large companies, but also enrich the everyday lives of each and every one of us. Over time, new areas of application for these crazy codes have been discovered again and again. It remains exciting to see what further developments await us!
+                    </p>
+                </div>
+
+                <div class="cube"></div>
+                <div class="btn top" onclick="scrollToTop()"></div>
+                <div class="bg-light-bottom"></div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="container"></div>                
+            <div class="credits">
+                <img src="../assets/img/cube.red.svg" height="24px"/>
+                <span>© 2023</span>
+                <span>Visual Knowledge</span>
+                <span>All rights reserved.</span>
+            </div>
+        </footer>
+        
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#what_problem" onclick="toggleSidebar()">What problem do barcodes solve?</a>
+                    <ul>
+                        <li><a href="#camera_ocr_alternative" onclick="toggleSidebar()">Capturing plain text via camera?</a></li>
+                    </ul>
+                </li>                
+                <li><a href="#evolution_of_barcodes" onclick="toggleSidebar()">Evolution of barcodes</a></li>
+                
+                <li>
+                    <a href="#1d_barcodes" onclick="toggleSidebar()">1D barcodes</a>
+                    <ul>
+                        <li><a href="#anatomy_1d" onclick="toggleSidebar()">Anatomy of 1D barcodes</a></li>
+                        <li><a href="#decoding_1d" onclick="toggleSidebar()">Decoding the barcode</a></li>
+                        <li><a href="#disadvantage_1d" onclick="toggleSidebar()">Disadvantages of 1D barcodes</a></li>                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#2d_barcodes" onclick="toggleSidebar()">2D barcodes</a>
+                    <ul>
+                        <li><a href="#capacity_density" onclick="toggleSidebar()">Data capacity and data density</a></li>
+                        <li><a href="#scanning_faster" onclick="toggleSidebar()">Scanning faster and easier</a></li>
+                        <li><a href="#reed_solomon" onclick="toggleSidebar()">Reed-Solomon error correction</a></li>
+                        <li><a href="#structure_of_2d" onclick="toggleSidebar()">The structure of a 2D barcode</a></li>
+                        <li><a href="#static_vs_dynamic" onclick="toggleSidebar()">Static vs. Dynamic QR Codes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#3d_barcodes" onclick="toggleSidebar()">3D barcodes</a></li>
+                <li><a href="#comparative_analysis" onclick="toggleSidebar()">Different codes in comparison</a></li>
+                <li><a href="#barcode_alternatives" onclick="toggleSidebar()">Barcode alternatives</a></li>
+                
+                
+                <li><a href="#create_barcode" onclick="toggleSidebar()">Create barcodes yourself</a></li>
+                <li><a href="#scan_barcode" onclick="toggleSidebar()">Scanning codes</a></li>
+                <li><a href="#conclusion" onclick="toggleSidebar()">Conclusion</a></li>
+            </ul>
+        </div>
+
+        <script src="../assets/libs/lazyload/lazyload.min.js"></script>
+        <script src="../assets/libs/glightbox/js/glightbox.min.js"></script>
+        <script src="../assets/js/script.article.js"></script>
+
+    </body>
+</html>

@@ -128,7 +128,7 @@ function setSidebar(pageTop, scrlY) {
       
 
     if (activeItems.length > 1) {
-        console.log('active items', activeItems)
+        // console.log('active items', activeItems)
 
         const lastITM = activeItems.find(i => i.last);
 
