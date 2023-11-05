@@ -39,5 +39,8 @@ If you'd like to get in touch with me, simply create an 'Issue.' It's the quicke
 
 <br/><br/><br/>
 ## license
+
+CC-BY-4.0 license
+
 I would greatly appreciate it if you refrained from merely taking the content and presenting it as your own work. At the very least, acknowledging the source would be a minimum courtesy when using the content. Simply referencing this repository as the source would suffice completely.
 
