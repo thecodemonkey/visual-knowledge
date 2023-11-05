@@ -2,7 +2,8 @@
  
 
 <!-- <img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/1bb64b8c-e94c-4ad5-8f46-668dd8c7668b#gh-light-mode-only"/>-->
-<img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/6d473390-5e5c-4ae2-99af-f7f05c25cc9d#gh-dark-mode-only"/> 
+<img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/829a501c-fc2d-4e2a-98d8-136900b85f7d#gh-dark-mode-only"/> 
+
 
 
 
