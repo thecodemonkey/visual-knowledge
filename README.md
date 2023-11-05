@@ -2,9 +2,7 @@
  
 
 <!-- <img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/1bb64b8c-e94c-4ad5-8f46-668dd8c7668b#gh-light-mode-only"/>-->
-<img src="https://github.com/thecodemonkey/visual-knowledge/assets/1646017/829a501c-fc2d-4e2a-98d8-136900b85f7d#gh-dark-mode-only"/> 
-
-
+![vk-intro2](https://github.com/thecodemonkey/visual-knowledge/assets/1646017/be65ec70-d80e-4106-a3d3-03e706904466#gh-dark-mode-only)
 
 
 https://www.visualknowledge.io
